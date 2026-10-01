@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="t d">
+  <title id="t">Segun Olaniyan</title>
+  <desc id="d">Frontend engineer. TypeScript, React, Next.js. Ibadan, Nigeria. Open to remote roles.</desc>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", monospace; }
+    .line { stroke-dasharray: 900; stroke-dashoffset: 900; animation: draw 2.4s ease-out .3s forwards; }
+    .area { opacity: 0; animation: fade 1s ease-out 1.6s forwards; }
+    .head { opacity: 0; animation: fade .4s ease-out 2.4s forwards; }
+    .ping { transform-box: fill-box; transform-origin: center; animation: ping 2s ease-out 2.6s infinite; opacity: 0; }
+    .blink { animation: blink 1.6s steps(1) infinite; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes fade { to { opacity: 1; } }
+    @keyframes ping { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(3.2); opacity: 0; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .line, .area, .head, .ping, .blink { animation: none; stroke-dashoffset: 0; opacity: 1; }
+      .ping { opacity: 0; }
+    }
+  </style>
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#d0d7de"/>
+    </pattern>
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0969da" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#0969da" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadeL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".55" stop-color="#ffffff" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="card"><rect x="1" y="1" width="1198" height="298" rx="16"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="300" fill="#ffffff"/>
+    <rect width="1200" height="300" fill="url(#dots)"/>
+
+    <!-- live series -->
+    <path class="area" fill="url(#fill)" d="M560 214 L620 206 L680 220 L740 188 L800 196 L860 160 L920 172 L980 128 L1040 142 L1100 98 L1140 108 L1140 300 L560 300 Z"/>
+    <path class="line" fill="none" stroke="#0969da" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
+          d="M560 214 L620 206 L680 220 L740 188 L800 196 L860 160 L920 172 L980 128 L1040 142 L1100 98 L1140 108"/>
+    <circle class="ping" cx="1140" cy="108" r="6" fill="#1a7f37"/>
+    <circle class="head" cx="1140" cy="108" r="6" fill="#1a7f37"/>
+
+    <rect width="760" height="300" fill="url(#fadeL)"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="298" rx="16" fill="none" stroke="#d0d7de" stroke-width="2"/>
+
+  <!-- live pill -->
+  <g transform="translate(1036 36)">
+    <rect width="124" height="32" rx="16" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <circle class="blink" cx="22" cy="16" r="5" fill="#1a7f37"/>
+    <text x="36" y="21" class="mono" font-size="14" fill="#59636e">streaming</text>
+  </g>
+
+  <text x="64" y="84" class="mono" font-size="18" fill="#0969da">~/ola-segun</text>
+  <text x="62" y="154" class="sans" font-size="64" font-weight="700" fill="#1f2328" letter-spacing="-1.5">Segun Olaniyan</text>
+  <text x="64" y="198" class="sans" font-size="24" fill="#31373d">Frontend engineer · live data, real money, TypeScript</text>
+  <text x="64" y="246" class="mono" font-size="16" fill="#59636e">Ibadan, Nigeria  ·  open to remote roles</text>
+</svg>
