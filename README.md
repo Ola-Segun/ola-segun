@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img alt="Segun Olaniyan. Frontend engineer: live data, real money, TypeScript. Ibadan, Nigeria, open to remote roles." src="assets/header-light.svg" width="100%">
+  <img alt="Segun Paul Olaniyan. Frontend engineer: live data, real money, TypeScript. Ibadan, Nigeria, open to remote roles." src="assets/header-light.svg" width="100%">
 </picture>
 
 <p align="center">
